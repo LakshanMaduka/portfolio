@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-Poppins scroll-smooth;
+}
+body {
+  @apply box-border bg-bgblack text-bgwhite;
+}
+.btn-primary {
+  @apply bg-bgblack hover:bg-bggold font-semibold text-bggold border-2 border-bggold  hover:text-bgblack md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+}
+
+/* .nav::after {
+  @apply w-[100%];
+} */
