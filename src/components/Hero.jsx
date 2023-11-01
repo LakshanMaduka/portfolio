@@ -1,4 +1,5 @@
 import myPhoto from "../assets/my2.png";
+import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const social_media = [
     "logo-linkedin",
@@ -21,9 +22,23 @@ const Hero = () => {
           </span>
           My Name is <span className="text-bggold">Lakshan Maduka</span>
         </h1>
-        <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
-          Web Developer/ Mobile Developer
-        </h4>
+
+        <TypeAnimation
+          className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600"
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "Mobile App Developer",
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            "Web Developer",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: "2em", display: "inline-block" }}
+          repeat={Infinity}
+        />
+
+        <typeWriter />
         <button className="btn-primary mt-5">Contact Me</button>
         <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ">
           {social_media.map((icon, i) => (

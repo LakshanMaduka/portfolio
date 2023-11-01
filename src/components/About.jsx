@@ -23,6 +23,7 @@ const About = () => {
                 team member. Intend to work hard for the advancement of any
                 project that I&apos;m working on.
               </p>
+
               <div>
                 <div className="flex mt-10 items-center gap-9">
                   {info.map((info) => (
@@ -36,6 +37,7 @@ const About = () => {
                   ))}
                 </div>
                 <br />
+
                 <br />
                 <a href="./src/assets/cv/M.B.L.M.Senevirathne.pdf" download>
                   <button className="btn-primary"> Download CV</button>
