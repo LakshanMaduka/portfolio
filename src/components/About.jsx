@@ -7,7 +7,7 @@ const About = () => {
     { text: "Mobile Projects", count: 10 },
   ];
   return (
-    <section id="about" className="py-10 text-bgwhite">
+    <section id="about" className="py-10 text-bgwhite ">
       <div className="text-center mt-8">
         <h3 className="text-5xl font-semibold">
           {" "}

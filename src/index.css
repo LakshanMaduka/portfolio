@@ -14,7 +14,13 @@ body {
 .btn-primary {
   @apply bg-bgblack hover:bg-bggold font-semibold text-bggold border-2 border-bggold  hover:text-bgblack md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
 }
-
-/* .nav::after {
-  @apply w-[100%];
-} */
+.swiper-pagination-bullet-active {
+  @apply bg-bggold;
+}
+input,
+textarea {
+  @apply bg-bgblack outline-none rounded-lg p-4;
+}
+::placeholder {
+  @apply text-lg;
+}

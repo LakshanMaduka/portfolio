@@ -35,7 +35,7 @@ const Skills = () => {
           My
           <span className="text-bggold">Skills</span>
         </h3>
-        <p className="text-bgash mt-4 text-2xl ">My Knoledge</p>
+        <p className="text-gray-400 my-5 text-xl ">My Knoledge</p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
           <div className="">
             <div className="grid md:grid-cols-4 md:gap-20 grid-cols-2 gap-3">

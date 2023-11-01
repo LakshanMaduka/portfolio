@@ -1,11 +1,23 @@
 import myPhoto from "../assets/my2.png";
 import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
-  const social_media = [
-    "logo-linkedin",
-    "logo-github",
-    "logo-instagram",
-    "logo-facebook",
+  const social_media_link = [
+    {
+      logo: "logo-linkedin",
+      link: "https://www.linkedin.com/in/lakshan-maduka",
+    },
+    {
+      logo: "logo-github",
+      link: "https://github.com/LakshanMaduka",
+    },
+    {
+      logo: "logo-instagram",
+      link: "https://instagram.com/_lakshan_maduka_?igshid=NGVhN2U2NjQ0Yg==",
+    },
+    {
+      logo: "logo-facebook",
+      link: "https://www.facebook.com/profile.php?id=100007620136955&mibextid=ZbWKwL",
+    },
   ];
   return (
     <section
@@ -41,12 +53,14 @@ const Hero = () => {
         <typeWriter />
         <button className="btn-primary mt-5">Contact Me</button>
         <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ">
-          {social_media.map((icon, i) => (
+          {social_media_link.map((media, i) => (
             <div
               key={i}
               className="text-gray-600 hover:text-white cursor-pointer "
             >
-              <ion-icon name={icon}></ion-icon>
+              <a href={media.link}>
+                <ion-icon name={media.logo}></ion-icon>
+              </a>
             </div>
           ))}
         </div>
