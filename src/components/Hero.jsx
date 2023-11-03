@@ -1,5 +1,6 @@
 import myPhoto from "../assets/my2.png";
 import { TypeAnimation } from "react-type-animation";
+import "aos/dist/aos.css";
 const Hero = () => {
   const social_media_link = [
     {
@@ -24,10 +25,18 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex py-2 md:flex-row flex-col items-center"
     >
-      <div className="flex-1 flex items-center justify-center">
+      <div
+        className="flex-1 flex items-center justify-center "
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <img src={myPhoto} className="md:w-11/12 h-full object-cover" />
       </div>
-      <div className="flex-1 md:text-left text-center">
+      <div
+        className="flex-1 md:text-left text-center "
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
           <span className="md:text-6xl text-5xl text-bggold">
             Hello ! <br />

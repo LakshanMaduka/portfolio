@@ -36,7 +36,11 @@ const Skills = () => {
           <span className="text-bggold">Skills</span>
         </h3>
         <p className="text-gray-400 my-5 text-xl ">My Knoledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
+        <div
+          className="flex items-center justify-center mt-12 gap-10 flex-wrap "
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <div className="">
             <div className="grid md:grid-cols-4 md:gap-20 grid-cols-2 gap-3">
               {skills.map((skill, i) => (

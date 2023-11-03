@@ -42,7 +42,11 @@ const Project = () => {
         <p className="text-gray-400 my-5 text-lg">My awesome works</p>
       </div>
       <br />
-      <div className="flex max-w-6xl gap-7 px-5 mx-auto items-center relative">
+      <div
+        className="flex max-w-6xl gap-7 px-5 mx-auto items-center relative"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div className=" w-full">
           <Swiper
             slidesPerview={1.2}

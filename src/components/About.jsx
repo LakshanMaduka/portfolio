@@ -1,4 +1,7 @@
 import aboutImage from "../assets/my3.png";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 const About = () => {
   const info = [
     { text: "Languages", count: 4 },
@@ -6,6 +9,7 @@ const About = () => {
     { text: "Web Projects", count: 4 },
     { text: "Mobile Projects", count: 10 },
   ];
+  const [trigger, setTri] = useState(false);
   return (
     <section id="about" className="py-10 text-bgwhite ">
       <div className="text-center mt-8">
@@ -23,29 +27,44 @@ const About = () => {
                 team member. Intend to work hard for the advancement of any
                 project that I&apos;m working on.
               </p>
+              <ScrollTrigger
+                onEnter={() => setTri(true)}
+                onExit={() => setTri(false)}
+              >
+                <div>
+                  <div className="flex mt-10 items-center gap-9">
+                    {info.map((info) => (
+                      <div key={info.text} className="md:text-lg text-sm">
+                        <h3 className="md:text-4xl text-2xl font font-semibold text-bgwhite ">
+                          {trigger && (
+                            <CountUp
+                              start={0}
+                              end={info.count}
+                              duration={2}
+                              delay={0}
+                            ></CountUp>
+                          )}
+                          <span className="text-bggold ">+</span>
+                        </h3>
+                        <span>{info.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <br />
 
-              <div>
-                <div className="flex mt-10 items-center gap-9">
-                  {info.map((info) => (
-                    <div key={info.text} className="md:text-lg text-sm">
-                      <h3 className="md:text-4xl text-2xl font font-semibold text-bgwhite ">
-                        {info.count}
-                        <span className="text-bggold ">+</span>
-                      </h3>
-                      <span>{info.text}</span>
-                    </div>
-                  ))}
+                  <br />
+                  <a href="./src/assets/cv/M.B.L.M.Senevirathne.pdf" download>
+                    <button className="btn-primary"> Download CV</button>
+                  </a>
                 </div>
-                <br />
-
-                <br />
-                <a href="./src/assets/cv/M.B.L.M.Senevirathne.pdf" download>
-                  <button className="btn-primary"> Download CV</button>
-                </a>
-              </div>
+              </ScrollTrigger>
             </div>
           </div>
-          <div className="flex-1 flex justify-center items-enter">
+          <div
+            className="flex-1 flex justify-center items-enter "
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <div className=" lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm">
               <img src={aboutImage} className="w-full object-cover" />
             </div>

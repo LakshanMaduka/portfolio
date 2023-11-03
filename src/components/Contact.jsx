@@ -41,6 +41,8 @@ const Contact = () => {
         <div
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-bgash md:p-6 p-2 rounded-lg mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="2000"
         >
           <form
             ref={form}
