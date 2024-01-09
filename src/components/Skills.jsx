@@ -1,12 +1,3 @@
-// import html from "../assets/skills/html.png";
-// import css from "../assets/skills/css.png";
-// import express from "../assets/skills/express.png";
-// import firebase from "../assets/skills/firebase.png";
-// import flutter from "../assets/skills/flutter.png";
-// import java from "../assets/skills/java.png";
-// import mongodb from "../assets/skills/mongodb.png";
-// import nodejs from "../assets/skills/nodejs.png";
-// import tailwindcss from "../assets/skills/tailwindcss.png";
 import html from "../assets/skills/svg/html.svg";
 import css from "../assets/skills/svg/css.svg";
 import flutter from "../assets/skills/svg/flutter.svg";
