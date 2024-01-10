@@ -60,7 +60,7 @@ const Hero = () => {
         />
 
         <typeWriter />
-        <button className="btn-primary mt-5">Contact Me</button>
+       <a href="#contact"> <button className="btn-primary mt-5">Contact Me</button></a>
         <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ">
           {social_media_link.map((media, i) => (
             <div
