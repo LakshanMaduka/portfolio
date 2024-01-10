@@ -53,7 +53,7 @@ const About = () => {
                   <br />
 
                   <br />
-                  <a href="./src/assets/cv/M.B.L.M.Senevirathne.pdf" download>
+                  <a href="/M.B.L.M.Senevirathne.pdf" download>
                     <button className="btn-primary"> Download CV</button>
                   </a>
                 </div>
